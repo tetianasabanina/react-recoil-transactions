@@ -6,7 +6,7 @@ export const transactionListState = atom({
 		{
 			id: 1,
 			amount: 10,
-			text: 'Found a 10 dollar bill!',
+			text: 'Found a 10 euro bill!',
 		},
 		{
 			id: 2,
