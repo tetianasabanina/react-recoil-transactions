@@ -1,22 +1,7 @@
-import { atom } from 'recoil';
+import { atom } from "recoil";
+import { T_Transaction } from "../types";
 
-export const transactionListState = atom({
-	key: 'transactionListState',
-	default: [
-		{
-			id: 1,
-			amount: 10,
-			text: 'Found a 10 euro bill!',
-		},
-		{
-			id: 2,
-			amount: -110,
-			text: 'New keyboard',
-		},
-		{
-			id: 3,
-			amount: 300,
-			text: 'Sold my old Playstation!',
-		},
-	],
+export const transactionListState = atom<T_Transaction[]>({
+  key: "transactionListState",
+  default: [],
 });

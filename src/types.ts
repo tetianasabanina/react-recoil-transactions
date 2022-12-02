@@ -1,5 +1,9 @@
 export type T_Transaction = {
-	id: number;
-	amount: number;
-	text: string;
+  id: string | null;
+  amount: number;
+  text: string;
+};
+
+export type T_TransactionProps = {
+  transaction: T_Transaction;
 };
